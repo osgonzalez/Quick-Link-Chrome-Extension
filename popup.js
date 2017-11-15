@@ -2,6 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+
+function downloadsUrl(link){
+  var script = 'alert('+link+')'+';';
+
+  chrome.tabs.executeScript({
+    code: script
+  });
+
+}
 /**
  * Get the current URL.
  *
